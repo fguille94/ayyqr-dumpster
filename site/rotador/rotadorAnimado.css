@@ -1,0 +1,30 @@
+	
+body { 
+	padding: 0; 
+	margin: 0;
+
+ }
+
+
+
+
+.contenedor { 
+	margin-top: 50px;
+	width: 1300px;
+	height: 600px;
+ 	overflow-x: hidden;
+ }
+
+
+
+
+.contenedorImgs{ 
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+ 	box-sizing: border-box;
+ 	width: 100%;
+ 	height:auto;	
+ } 
+
+ 

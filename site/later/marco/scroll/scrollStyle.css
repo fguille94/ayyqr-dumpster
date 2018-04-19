@@ -1,0 +1,28 @@
+
+.box {
+	width: 550px;
+ 	margin:0 auto;
+ }
+
+
+ul {
+	display: flex;
+	box-sizing: border-box;
+ 	flex-flow: row wrap;
+ 	font-family: sans-serif;
+ }
+
+
+ul li {
+	width: 20px;
+	height: 20px;
+	list-style: none;
+	padding: 10px;
+	margin:20px;
+	background-color:#e7e7e7;
+  	/*border: solid 3px gold;*/
+  	border-radius: 5px;
+  	text-align: center;
+  	font-weight: bold;
+  	color: green;
+  	}

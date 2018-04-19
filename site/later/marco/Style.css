@@ -1,0 +1,140 @@
+
+body { 
+	background-color:white;
+	color:rgb(200,0,200);		
+
+  }
+
+
+.opacidad { 
+	opacity: 0.1;
+
+ }
+
+.loader { 
+	background: url(imgs/ico_loading.gif) no-repeat center;	
+ 	width:100%;
+ 	height: 50px;	
+ 	position: absolute;	
+ 	top: 50%;	
+ 	opacity:1;	
+ 	z-index: 9999;
+ } 
+
+.loaded { 
+	opacity:1;
+	transition: all ease-in-out 5s;
+ } 
+
+h1 { 
+	text-align: center;
+
+ }
+
+.container { 
+	width:550px;
+	margin-top: 50px;
+	
+}
+
+img { 
+	position: absolute;
+
+ }
+
+label { 
+	font-weight:bold;
+
+ } 
+
+
+small { 
+	color:gold;
+
+ } 
+
+
+.container form .form-group input { 
+	border-color: rgb(200,0,200)
+}
+
+.tilde, .negado { 
+	top: 133px;
+	left:895px;
+	display: none;
+} 
+
+.tilde2, .negado2 { 
+	top: 243px;
+	left:895px;
+	display: none;
+} 
+  
+.tilde3, .negado3 { 
+	top: 353px;
+	left:895px;
+	display: none;
+} 
+
+.tarjetas { 
+	margin:20px 0 40px 0;
+	text-align: center;
+	font-weight: bold;
+ 	font-size: 24px;
+ }
+
+
+#clicking1, #clicking2 { 
+	display: none;
+
+}
+
+[type="radio"]:checked + label{ 
+	border:solid 3px orange;
+	border-radius:20px;
+	transform: rotate(720deg);
+	transition:all ease-in-out 1s;
+
+ }
+
+.tarjetas{ 
+box-sizing: border-box;
+display: flex; 
+justify-content: space-evenly;
+flex-flow: row wrap;
+
+}
+
+
+.tarjetaVisa{ 
+	background: url(imgs/visa.jpg) no-repeat;	
+	height: 60px; 
+	width: 120px;
+
+ }
+
+
+.tarjetaMastercard { 
+	background: url(imgs/mastercard.jpg) no-repeat;
+	height: 100px;	
+	width: 120px;
+	margin-top:-25px; 
+ 
+
+ }
+
+
+
+
+
+
+#boton {   
+	box-sizing:border-box; 
+	box-sizing: content-box;
+	background: gold;
+	border-color:gold;
+	padding:12px 50px;
+	margin:30px 0 0 170px;
+ 	font-size: 1.5rem;
+ }
+ 

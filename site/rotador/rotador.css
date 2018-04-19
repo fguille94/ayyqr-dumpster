@@ -1,0 +1,92 @@
+	
+body { 
+	padding: 0; 
+	margin: 0;
+
+ }
+
+
+.contenedor { 
+	margin-top: 50px;
+	width: 1300px;
+	height: 600px;
+ 	overflow-x: hidden;
+ }
+
+
+input[type="radio"] { 
+	display: none;		
+
+}
+
+label { 
+	position: absolute;
+	top:700px;
+ 	width: 20px;
+ 	height: 20px;
+ 	background-color: #e2e2e2;
+ 	border-radius: 25px;
+ 	
+ } 
+
+ label.rotador-1 { 
+	left:575px;
+} 
+
+ label.rotador-2 { 
+	left:625px;
+}
+
+ label.rotador-3 { 
+	left:675px;
+}
+
+ label.rotador-4 { 
+	left:725px;
+}
+
+label:hover { 
+	background-color: #000;
+	opacity: 0.5;
+	width: 22px;
+ 	height: 22px;
+ }
+
+input[type="radio"]:checked + label { 
+	background-color: #000;
+
+ }
+
+.contenedorImgs{ 
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+ 	box-sizing: border-box;
+ 	width: 100%;
+ 	height:auto;
+	transition: all ease-in 0.3s;
+ 
+ } 
+
+ 
+#btn-1:checked ~ .contenedorImgs  { 
+	 margin-left:0%; 
+	
+  	  	}
+	
+#btn-2:checked ~ .contenedorImgs { 
+	margin-left:-100%;
+		
+  	}  
+
+
+#btn-3:checked ~ .contenedorImgs { 
+	margin-left:-200%;
+	
+	}   
+
+
+#btn-4:checked ~ .contenedorImgs { 
+	margin-left:-300%;
+	
+	}  

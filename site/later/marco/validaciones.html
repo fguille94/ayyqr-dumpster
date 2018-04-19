@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title> Carrito de compra </title>
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="Style.css" type="text/css">
+
+    <script src="jquery-3.2.1.js" type="text/javascript">  </script> 
+
+    <script type="text/javascript" src="script.js">  </script> 
+
+</head>
+
+<body>
+
+<div class="loader"> </div>
+
+<section class="opacidad">
+
+<h1> Modo de pago </h1>
+
+<div class="container">
+
+<form action="validaciones_submit" method="get" accept-charset="utf-8">
+    
+<div class="form-group"> 
+
+<label for="correo"> Correo electronico </label>
+
+<input type="email" id="correo" class="form-control" placeholder="ingrese su correo completo por favor" title="por favor coloque un correo valido"  required> 
+
+<img src="imgs/tilde.jpg" alt="tilde" width="20" height="20" class="tilde"> 
+
+<img src="imgs/negado.jpg" alt="negado" width="20" height="20" class="negado">
+
+<small id="validaCorreo"> recuerde colocar el correo segun los parametros correctos </small>
+    
+</div>
+
+<div class="form-group">
+    
+<label for="numeroTarjeta"> Numero de Tarjeta </label>
+
+<input type="text" id="numeroTarjeta" class="form-control" placeholder="4455-7788-2547-9652" title="los guiones entre numeros son opcionales"> 
+
+<img src="imgs/tilde.jpg" alt="tilde" width="20" height="20" class="tilde2"> 
+
+<img src="imgs/negado.jpg" alt="negado" width="20" height="20" class="negado2">
+
+<small id="validaNumero">  Los guiones son opionales </small>
+
+</div>
+
+<div class="form-group">
+    
+<label for="codigoTarjeta"> Numero de CVV </label>
+
+<input type="password" id="codigoTarjeta" class="form-control" placeholder="ejemplo: 123 "> 
+
+<small id="validaCodigo"> Solo puede ingresar numeros </small>
+
+<img src="imgs/tilde.jpg" alt="tilde" width="20" height="20" class="tilde3"> 
+
+<img src="imgs/negado.jpg" alt="negado" width="20" height="20" class="negado3">
+
+</div> 
+
+<p class="tarjetas"> Tipo de tarjeta: </p> 
+
+<div class="tarjetas">
+
+<input type="radio" name="tipoTarjeta" id="clicking1">
+
+<label for="clicking1" class="tarjetaVisa">  </label>
+
+<input type="radio" name="tipoTarjeta" id="clicking2"> 
+
+<label for="clicking2" class="tarjetaMastercard">  </label>
+
+ 
+
+</div>
+
+<div class="form-group">
+    
+<label> Seleccione tiempo de vencimiento: </label> 
+
+<br> <br> 
+
+<label for="seleccionMes"> Mes </label>
+
+<select name="seleccionMes"> 
+    
+    <option> 01 </option> 
+
+    <option> 02 </option>
+
+    <option> 03 </option> 
+
+    <option> 04 </option> 
+
+    <option> 05 </option>
+
+    <option> 06 </option>
+
+    <option> 07 </option> 
+
+    <option> 08 </option>
+
+    <option> 09 </option>
+
+    <option> 10 </option> 
+
+    <option> 11 </option>
+
+    <option> 12 </option> 
+
+</select>
+
+<label for="seleccionYear"> Year </label>
+
+<select name="seleccionYear">    
+
+<option> 2017 </option>
+
+<option> 2018 </option> 
+
+<option> 2019 </option>
+
+<option> 2020 </option>
+
+<option> 2021 </option>
+
+<option> 2022 </option>
+
+<option> 2023 </option>
+
+<option> 2024 </option> 
+
+</select>
+
+</div> 
+
+<div class="form-group">
+
+<label for="preguntaSecreta"> Escoja su pregunta secreta: </label> 
+
+<br> <br> 
+
+<select name="preguntaSecreta">  
+
+<option> ¿Quien te vendio? </option>
+
+<option> ¿Cual es mi perro favorito? </option> 
+
+<option> ¿De donde vengo y adonde fui? </option>
+
+<option> ¿Que haras con tu vida? </option>
+
+<option> ¿Cual es el nombre de tu mejor amigo? </option>
+
+ </select>  
+
+ </div>
+
+<div class="form-group">
+
+<label for="respuesta"> Respuesta: </label> 
+
+ <br>   
+
+<input type="password" name="respuesta" placeholder="respuesta secreta" title="respuesta secreta" id="respuestaSecreta" class="form-control"> 
+
+<small id="validaRespuesta"> debe tener de 8 a 15 caracteres una mayuscula un numero y un simbolo especial </small> 
+
+</div>
+
+<label for="checking" class="form-check-label"> Mostrar respuesta </label>
+
+<input type="checkbox" name="checkbox" id="checking"> 
+
+<br>  <br> 
+
+<button id="boton" class="btn btn-primary" type="submit"> Pagar </button>
+
+</form>
+
+</div>
+
+<br> <br>
+
+<br> <br>
+
+<br> <br>
+
+<br> <br>
+
+<br> <br>
+
+<br> <br>
+
+<br> <br>
+
+<br> <br>  
+
+</section>
+
+</body>
+
+</html>

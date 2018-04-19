@@ -1,0 +1,96 @@
+[
+	> what to show, style
+	$ functions, goto
+	$$ not really required functions
+	# info used in functions
+]
+
+{unloggedin_home}
+> cool dashboard
+$ signup > {signup}
+$ login > {login}
+
+{home}.{signup}
+$ create user
+	#all in ayyqr.users
+		#ayyqr.genders
+		#ayyqr.role_assigments
+$ redirect to login {login}
+
+{home}.{login}
+$ if redirected from signup, remember to check email to activate acc {email}
+$ login
+	# username
+	# password
+$ restore password
+$$ send username to email
+$ redirect to home after successful login {loggedin_home}
+
+{external}{email}
+> show username and email used on signup
+> link to home {home}
+
+{loggedin_home}
+ >>> or
+{home}.{list_of_events}
+> summary of events
+> or list of events
+$ view details of selected event {details_of_event}
+$ favorite event
+
+{home}.{list_of_events}.{details_of_event}
+> show info and images of event
+$ buy_tickets_for_events {buy_tickets_for_events}
+$ favorite event
+
+{home}.{list_of_events}.{details_of_event}.{buy_tickets_for_events}
+$ id of event cached
+> show info of event
+> info uneditable
+$ select from 1 to -max amount of tickets
+$ show price, updating with amount change
+$ continue button
+
+{home}.{list_of_events}.{details_of_event}.{buy_tickets_for_events}.*{purchase_of_ticket}*
+$ process payment
+	# credit card info
+$ purchase button
+
+{home}.{list_of_events}.{details_of_event}.{buy_tickets_for_events}.*{purchase_of_ticket}*.*{successful_paymment}*
+$ generate tickets and insert into DB
+> show congrats message and
+> show name, time and address of event
+$ button to go get the tickets {gettin_em_tickets}
+
+{home}.{list_of_events}.{details_of_event}.{buy_tickets_for_events}.*{purchase_of_ticket}*.*{unsuccessful_paymment}*
+> show payment has failed to be proccessed
+> try again
+> make sure you have enough credit to pay for [amountToPay]
+$ redirect to event page
+
+{home}.{gettin_em_tickets_with_event_id}
+> <h1>event name</h1>
+> <h2>ticket # of user: <h1>Your ticket #1</h1>, ticket_div upper_left
+> <h5>4 last numeric digits of each ticket, ticket_div down_left
+> <img>svg of user's ticket, ticket_div all_right
+
+{home}.{view purchases}
+> c1: event name
+> c2: start date
+> c3: end date
+> c4: tickets bought
+> c5: {getting_em_tickets_with_event_id}
+
+{home}.{profile}
+$ show user info
+$ {{edit}} basic info like name, pw, address
+
+{home}.{favorites}
+$ link of event detail {details_of_event}
+$ delete favorite
+
+{TO_ADD_FEATURES}
+$ CALCULATE TRAVEL ROUTE FROM USER ADDRESS TO EVENT ADDRESS
+> show from event page {{ calculate route }}
+
+
