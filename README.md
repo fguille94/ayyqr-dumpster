@@ -1,2 +1,2 @@
-# ayyqr-trashbin
+# ayyqr-dumpster
 Unused useful shit for AyyQR

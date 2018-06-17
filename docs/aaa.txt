@@ -1,0 +1,22 @@
+eventos cancelados, notif a clientes, contacto admins
+
+notificacion a managers y admins, alarmas, previo a fecha, pocos boletos vendidos
+
+limitacion de compra de boletos por cliente, con un default y la opción de editar para manager
+
+reserva de boletos (max 1 día, si se agota capacidad, borrar, pagos importan más)
+
+preventa (monto inferior, porcentaje de descuento)
+
+verificacion de fechas en TODO
+
+añadir pagina para ver compra específica de usuario
+
+boletos de cortesía para managers, gratis para invitaciones especiales
+
+añadir usuario a forgotPw, separar por pantallas
+
+boletos negativos
+
+bloque de tickets por extravío/hurto, módulo para usuario, generar nuevos códigos
+
